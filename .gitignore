@@ -1,3 +1,7 @@
+# cpp project build files
+project/cmake-build-debug/
+project/out/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
