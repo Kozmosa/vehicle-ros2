@@ -66,7 +66,8 @@ int communicator_main() {
         if (!dataToSend.empty()) {
             // 使用 writeString 发送字符串 (会自动添加空终止符，STM32端需注意处理)
             // 或者使用 writeBytes 发送原始字节数据
-            int bytesSent = serial.writeString(dataToSend.c_str());
+            std::string stringToSend = "@" + dataToSend;
+            int bytesSent = serial.writeString(stringToSend.c_str());
             // int bytesSent = serial.writeBytes(dataToSend.data(), dataToSend.length()); // 发送原始字节
 
             if (bytesSent <= 0) {
