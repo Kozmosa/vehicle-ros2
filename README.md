@@ -11,6 +11,13 @@ The project is comprised by following parts:
 - Motion controller module
 - ARUCO locating module
 
+# Camera calibration
+
+We employed aruco-capture(python + shell) module and calibration(cpp) module to implement camera calibration coefficients calculation.
+
+- aruco-capture: capture pictures using rpicam-jpeg shell command and save pictures to file system for calibration. 
+- calibration: calibration using opencv integrated calibration module, employing 14+ pictures from filesystem taken by aruco-capture module.
+
 # Map building
 
 # Auto navigation
