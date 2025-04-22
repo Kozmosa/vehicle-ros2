@@ -15,7 +15,7 @@ using namespace std;
 namespace fs = std::filesystem;
 
 //1545*1393
-const string MAP_PATH = R"(/home/kozumi/snap/code-server/common/aruco-analysis/11.png)";
+const string MAP_PATH = R"(/home/kozumi/git/vehicle-ros2/vehicle-ros2-main/aruco-analysis/11.png)";
 
 struct ArUcoMarkerInfo 
 {
@@ -195,4 +195,4 @@ int main()
         return -1;
     }
     return 0;
-}    
+}
